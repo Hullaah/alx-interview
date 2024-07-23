@@ -4,6 +4,7 @@ Implements the pascal_triangle function which
 generates the pascal triangle sequence.
 """
 
+
 def factorial(n):
     """Computes factorial of n
     """
