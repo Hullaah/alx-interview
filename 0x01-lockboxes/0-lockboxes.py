@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""The program aims to solve the following problem:
+"""
+The program aims to solve the following problem:
 You have n number of locked boxes in front of you.
 Each box is numbered sequentially from 0 to n - 1
 and each box may contain keys to the other boxes.
@@ -7,12 +8,12 @@ Determine if all the boxes can be opened.
 """
 
 
-def canUnlockAll(boxes: list[list[int]]) -> bool:
+def canUnlockAll(boxes):
     """Determines if all boxes can be opened
     """
     unclockedBoxes = set([0])
 
-    def canUnlockAllBoxesFrom(box: list[int]) -> bool:
+    def canUnlockAllBoxesFrom(box):
         if len(unclockedBoxes) == len(boxes):
             return True
         elif len(box) == 0:
