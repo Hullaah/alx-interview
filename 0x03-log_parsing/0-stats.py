@@ -30,14 +30,14 @@ def main():
                 if num_lines == 10:
                     print("File size: {}".format(total_size))
                     print_metric(metric)
-                    metric = collections.Counter()
-                    total_size = 0
                     num_lines = 0
                 (status_code, file_size) = parse(line.rstrip())
                 if status_code is not None:
                     total_size += file_size
                     metric.update([status_code])
                 num_lines += 1
+            print("File size: {}".format(total_size))
+            print_metric(metric)
             break
         except KeyboardInterrupt:
             print("File size: {}".format(total_size))
