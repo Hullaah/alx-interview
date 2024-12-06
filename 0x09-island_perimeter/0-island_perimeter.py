@@ -2,6 +2,8 @@
 """
 Solves the island perimeter problem
 """
+
+
 def island_perimeter(grid):
     """
     Calculate the perimeter of the island described in the grid.

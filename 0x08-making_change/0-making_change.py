@@ -3,16 +3,18 @@
 This module defines the makeChange function.
 """
 
+
 def makeChange(coins, total):
     """
     Determine the fewest number of coins needed to meet a given amount total.
-    
+
     Parameters:
     coins (list): List of coin denominations.
     total (int): Target amount to achieve.
-    
+
     Returns:
-    int: Fewest number of coins needed to meet the total or -1 if it can't be met.
+    int: Fewest number of coins needed to meet the total
+        or -1 if it can't be met.
     """
     if total <= 0:
         return 0
